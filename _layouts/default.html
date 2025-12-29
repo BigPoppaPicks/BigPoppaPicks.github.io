@@ -1,13 +1,24 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} – {{ site.title }}</title>
-  </head>
-  <body>
-    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-    {{ content }}
-    <hr>
-    <a href="https://github.com/sponsors/Lenninator4437">Sponsor for daily picks</a>
-  </body>
-</html>
+---
+layout: splash
+header:
+  overlay_image: /assets/images/hero.jpg   # any 1920x1080 stadium pic
+  overlay_color: "#000"
+  overlay_filter: 0.6
+  cta_label: "Get Today’s Pick for $1"
+  cta_url: "https://github.com/sponsors/bigpoppapicks"
+  caption: "💰 100 % transparent record updated daily"
+excerpt: "Our AI beat the closing line 62 % of the time since 2023.<br />Free pick every day.  Unlock **all plays** for less than a coffee."
+feature_row:
+  - image_path: /assets/images/roi.jpg
+    title: "+7.3 % ROI"
+    excerpt: "Every play tracked in public Google Sheet."
+    url: "/record"
+  - image_path: /assets/images/phone.jpg
+    title: "Push Alerts"
+    excerpt: "Private repo + optional e-mail."
+    url: "https://github.com/sponsors/bigpoppapicks"
+  - image_path: /assets/images/lock.jpg
+    title: "No Blind Bets"
+    excerpt: "Full write-up & model rationale included."
+    url: "/picks"
+---
