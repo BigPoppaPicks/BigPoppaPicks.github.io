@@ -1,14 +1,12 @@
 ---
-layout: default
-title: Home
+layout: splash
+header:
+  overlay_image: /assets/images/hero.jpg
+  overlay_color: "#000"
+  overlay_filter: 0.6
+  cta_label: "Get Today’s Pick for $1"
+  cta_url:  "https://github.com/sponsors/bigpoppapicks"
+  caption: "💰 100 % transparent record updated daily"
+excerpt: "Our AI beat the closing line 62 % of the time since 2023.<br>
+         Free pick every day. Unlock <strong>all plays</strong> for less than a coffee."
 ---
-“Beat the books with AI value.”
-
-Yesterday’s FREE play is below.  
-[Lock in Today’s Edge →](https://github.com/sponsors/Lenninator4437) for today’s pick.
-
-{% for post in site.posts limit:2 %}
-## Latest Free Pick
-**{{ post.title }}** – {{ post.date | date: "%b %d" }}  
-{{ post.content }}
-{% endfor %}
